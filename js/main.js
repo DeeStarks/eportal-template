@@ -46,7 +46,7 @@ let chart01 = new Chart(semester01, {
         labels: ['Sep', "Oct", "Nov", "Dec", "Jan"],
         datasets: [{
             label: 'Percentage',
-            data: [100, 80, 80, 90, 60],
+            data: [96, 80, 80, 90, 60, 50, 100],
             fill: false,
             borderColor: '#ff03cd58',
             borderWidth: 2,
@@ -61,7 +61,7 @@ let chart02 = new Chart(semester02, {
         labels: ['Feb', "Mar", "Apr", "May", "June"],
         datasets: [{
             label: 'Percentage',
-            data: [70, 80, 90, 50, 70],
+            data: [70, 80, 90, 55, 72, 50, 100],
             fill: false,
             borderColor: '#ff850358',
             borderWidth: 2
