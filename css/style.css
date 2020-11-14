@@ -887,13 +887,12 @@ body{
 .attendance .att{
     border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.042);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .attendance .row .semester01, .attendance .row .semester02, .attendance .row .complete_att01, .attendance .row .complete_att02{
     padding: 10px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.076);
 }
 
 .attendance .row .semester01 .row, .attendance .row .semester02 .row, .attendance .row .complete_att01 .row, .attendance .row .complete_att02 .row{
