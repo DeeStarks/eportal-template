@@ -380,6 +380,18 @@ body{
     width: 30px;
 }
 
+.side_in .sidenav_link a span{
+    position: absolute;
+    font-size: 10px;
+    margin-top: 8px;
+    left: 26px;
+    color: white;
+    background-color: rgb(140, 0, 0);
+    padding: 3px;
+    border-radius: 50%;
+    line-height: 6px;
+}
+
 .main_body{
     background-color: white;
     padding: 100px 50px 50px 350px;
@@ -393,7 +405,7 @@ body{
     }
 
     .main_body{
-        padding: 100px 50px 50px 50px;
+        padding: 100px 50px 50px 50px !important;
     }
 }
 
@@ -826,4 +838,75 @@ body{
 
 .result-details tr td{
     text-align: left;
+}
+
+.library .row img{
+    box-shadow:3px 3px 4px rgba(253, 253, 253, 0.2);
+}
+
+.library .row img:hover{
+    transform: scale(1.05);
+}
+
+.notification .row .row{
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.118);
+    margin-bottom: 10px;
+}
+
+.notification .row .new{
+    background-color: rgba(0, 32, 90, 0.295);
+}
+
+.notification .row .row div{
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.notification .row .row div a{
+    font-style: italic;
+}
+
+.timetable .row .row{
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.118);
+    margin-bottom: 10px;
+}
+
+.timetable .row .row div{
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.timetable .row .row div a{
+    font-style: italic;
+}
+
+.attendance .att{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.042);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.attendance .row .semester01, .attendance .row .semester02, .attendance .row .complete_att01, .attendance .row .complete_att02{
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.attendance .row .semester01 .row, .attendance .row .semester02 .row, .attendance .row .complete_att01 .row, .attendance .row .complete_att02 .row{
+    padding: 20px;
+}
+
+.attendance .att_title{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.158);
 }

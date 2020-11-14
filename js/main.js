@@ -31,9 +31,77 @@ $(function(){
             reader.readAsDataURL(file);
         }
     }
+})
 
-    $(document).ready(function(){
-        $('#birth-date').mask('00/00/0000');
-        $('#phone-number').mask('0000-0000');
-       })
+// Attendance Charts
+let semester01 = document.getElementById("semester01").getContext('2d');
+let semester02 = document.getElementById("semester02").getContext('2d');
+let complete_att01 = document.getElementById("complete_att01").getContext('2d');
+let complete_att02 = document.getElementById("complete_att02").getContext('2d');
+
+
+let chart01 = new Chart(semester01, {
+    type: 'line',
+    data: {
+        labels: ['Sep', "Oct", "Nov", "Dec", "Jan"],
+        datasets: [{
+            label: 'Percentage',
+            data: [100, 80, 80, 90, 60],
+            fill: false,
+            borderColor: '#ff03cd58',
+            borderWidth: 2,
+        }]
+    },
+    options: {}
+})
+
+let chart02 = new Chart(semester02, {
+    type: 'line',
+    data: {
+        labels: ['Feb', "Mar", "Apr", "May", "June"],
+        datasets: [{
+            label: 'Percentage',
+            data: [70, 80, 90, 50, 70],
+            fill: false,
+            borderColor: '#ff850358',
+            borderWidth: 2
+        }]
+    },
+    options: {}
+})
+
+let complete01 = new Chart(complete_att01, {
+    type: 'pie',
+    data: {
+        labels: ["Presence (80%)", "Absence (20%)"],
+        datasets: [{
+            label: 'Percentage',
+            data: [80, 20],
+            backgroundColor: [
+                '#00ff1e',
+                '#ff6347'
+            ],
+            fill: false,
+            borderColor: 'transparent',
+            borderWidth: 2,
+            weight: 2
+        }]
+    },
+    options: {}
+})
+
+let complete02 = new Chart(complete_att02, {
+    type: 'bar',
+    data: {
+        labels: ['Sep', "Oct", "Nov", "Dec", "Jan", 'Feb', "Mar", "Apr", "May", "June"],
+        datasets: [{
+            label: 'Percentage',
+            data: [100, 80, 80, 90, 60, 70, 80, 90, 50, 70],
+            backgroundColor: '#ff63479e',
+            fill: false,
+            borderColor: '#ff6347',
+            borderWidth: 2
+        }]
+    },
+    options: {}
 })
