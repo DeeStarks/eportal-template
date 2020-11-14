@@ -91,12 +91,12 @@ let complete01 = new Chart(complete_att01, {
 })
 
 let complete02 = new Chart(complete_att02, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
-        labels: ['Sep', "Oct", "Nov", "Dec", "Jan", 'Feb', "Mar", "Apr", "May", "June"],
+        labels: ['1st Semester', "2nd Semester"],
         datasets: [{
             label: 'Percentage',
-            data: [100, 80, 80, 90, 60, 70, 80, 90, 50, 70],
+            data: [90, 82, 0, 100],
             backgroundColor: '#ff63479e',
             fill: false,
             borderColor: '#ff6347',
