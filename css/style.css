@@ -72,7 +72,7 @@ body{
     box-sizing: border-box !important;
     text-align: center;
     font-size: 45px;
-    font-family: Dosis;
+    font-family: Dosis !important;
     color: rgb(0, 32, 90) !important;
     float: left;
     margin-right: 10px;
