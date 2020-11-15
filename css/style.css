@@ -671,6 +671,7 @@ body{
 .login-dark {
     height:100vh;
     background:#475d62 url('../images/auth-bg.jpg');
+    backdrop-filter: blur(5px);
     background-size:cover;
     background-position: center center;
     position:relative;
@@ -687,7 +688,6 @@ body{
     top:55%;
     left:50%;
     color:rgb(0, 0, 0);
-    box-shadow:3px 3px 4px rgba(253, 253, 253, 0.2);
 }
 
 .login-dark .illustration {
