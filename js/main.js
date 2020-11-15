@@ -105,3 +105,4 @@ let complete02 = new Chart(complete_att02, {
     },
     options: {}
 })
+

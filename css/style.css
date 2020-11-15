@@ -749,23 +749,23 @@ body{
     transform:translateY(1px);
 }
 
-.courses table{
+.courses table, .result table{
     width:100%;
     table-layout: fixed;
 }
 
-.courses .tbl-header{
+.courses .tbl-header, .result .tbl-header{
     background-color: rgba(0, 32, 90, 0.933);
 }
 
-.courses .tbl-content{
+.courses .tbl-content, .result .tbl-content{
     height:300px;
     overflow-x:auto;
     margin-top: 0px;
     border: 1px solid rgba(0, 32, 90, 0.371);
 }
 
-.courses .tbl-foot table tr td button{
+.courses .tbl-foot table tr td button, .result .tbl-foot table tr td button{
     float: right;
     width: 150px;
     line-height: 30px;
@@ -774,11 +774,11 @@ body{
     color: white;
 }
 
-.courses .tbl-foot table tr:hover{
+.courses .tbl-foot table tr:hover, .result .tbl-foot table tr:hover{
     background-color: transparent;
 }
 
-.courses th{
+.courses th, .result th{
     padding: 20px 15px;
     text-align: left;
     font-weight: 500;
@@ -788,7 +788,7 @@ body{
     text-align: center;
 }
 
-.courses td{
+.courses td, .result td{
     padding: 15px;
     text-align: left;
     vertical-align:middle;
@@ -799,11 +799,11 @@ body{
     text-align: center;
 }
 
-.courses tr:hover{
+.courses tr:hover, .result tr:hover{
     background-color: rgba(0, 32, 90, 0.111);
 }
 
-.courses .even{
+.courses .even, .result .even{
     background-color: rgba(0, 32, 90, 0.233);
 }
 
@@ -884,6 +884,22 @@ body{
     font-style: italic;
 }
 
+.voucher .row .row{
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.118);
+    margin-bottom: 10px;
+}
+
+.voucher .row .row div{
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.voucher .row .row div a{
+    font-style: italic;
+}
+
 .attendance .att{
     border-radius: 10px;
     overflow: hidden;
@@ -908,4 +924,106 @@ body{
     width: 100%;
     line-height: 30px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.158);
+}
+
+.records #accordion .card-header .btn{
+    width: 100%;
+    box-shadow: none !important;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.755);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.records #accordion .card-header .btn:hover{
+    color: black;
+}
+
+.records #accordion .card-header .btn i{
+    float: right;
+}
+
+.record-details table{
+    width: 400px;
+}
+
+.record-details table tr td{
+    border: 1px solid rgba(0, 0, 0, 0.111);
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.record-details table tr:nth-child(3) td{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media(max-width: 500px){
+    .record-details table{
+        width: 100%;
+    }
+}
+
+.mainbox {
+    background-color: rgb(0, 32, 90);
+    margin: auto;
+    height: 500px;
+    width: 600px;
+    position: relative;
+    margin-top: 15vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 650px){
+    .mainbox{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+  
+.main__404 .mainbox .err {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top: 8%;
+}
+
+.main__404 .mainbox .msg {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    position:absolute;
+    top: 55%;
+    width: 75%;
+}
+
+@media(max-width: 650px){
+    .main__404 .mainbox .err{
+        top: 40%;
+        font-size: 50px;
+    }
+
+    .main__404 .mainbox .msg{
+        font-size: 15px;
+    }
+}
+
+.main__404 .mainbox a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+}
+
+.main__404 .mainbox a:hover {
+    text-decoration: underline;
 }

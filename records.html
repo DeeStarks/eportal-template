@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <title>DeeStarks University</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="front_page" id="front_page">
@@ -40,13 +39,13 @@
                         <div>
                             <a href="index.html"><i class="fas fa-newspaper"></i>News Feed</a>
                             <a href="courses.html"><i class="fas fa-book"></i>Courses</a>
-                            <a href="records.html"><i class="fas fa-file-alt"></i>Records</a>
+                            <a href="records.html"  class="active"><i class="fas fa-file-alt"></i>Records</a>
                             <a href="profile.html"><i class="fas fa-user"></i>Profile</a>
                             <a href="notification.html"><i class="fas fa-bell"></i>Notification <span>2</span></a>
                             <a href="voucher.html"><i class="fas fa-money-check"></i>Fee Voucher</a>
                             <a href="table.html"><i class="fas fa-table"></i>Time Tables</a>
                             <a href="library.html"><i class="fas fa-book-reader"></i>Digital Library</a>
-                            <a href="attendance.html" class="active"><i class="fas fa-chart-bar"></i>Attendance</a>
+                            <a href="attendance.html"><i class="fas fa-chart-bar"></i>Attendance</a>
                             <a href="result.html"><i class="fas fa-graduation-cap"></i>My Result</a>
                             <a href="start.html" class="side_link02"><i class="fas fa-info-circle"></i>Get Started</a>
                             <a href="#"><i class="fas fa-power-off"></i>Log Out</a>
@@ -81,13 +80,13 @@
                     <div>
                         <a href="index.html"><i class="fas fa-newspaper"></i>News Feed</a>
                         <a href="courses.html"><i class="fas fa-book"></i>Courses</a>
-                        <a href="records.html"><i class="fas fa-file-alt"></i>Records</a>
+                        <a href="records.html" class="active"><i class="fas fa-file-alt"></i>Records</a>
                         <a href="profile.html"><i class="fas fa-user"></i>Profile</a>
                         <a href="notification.html"><i class="fas fa-bell"></i>Notification <span>2</span></a>
                         <a href="voucher.html"><i class="fas fa-money-check"></i>Fee Voucher</a>
                         <a href="table.html"><i class="fas fa-table"></i>Time Tables</a>
                         <a href="library.html"><i class="fas fa-book-reader"></i>Digital Library</a>
-                        <a href="attendance.html" class="active"><i class="fas fa-chart-bar"></i>Attendance</a>
+                        <a href="attendance.html"><i class="fas fa-chart-bar"></i>Attendance</a>
                         <a href="result.html"><i class="fas fa-graduation-cap"></i>My Result</a>
                     </div>
                 </div>
@@ -103,47 +102,132 @@
                 </div>
             </div>
         </div>
-        <div class="main_body attendance">
-            <div class="body_title">YOUR 2020/2021 ATTENDANCE - SOPHOMORE (200L)</div>
+        <div class="main_body records">
+            <div class="body_title">YOUR RECORDS</div>
             <hr>
-            <div class="row att">
-                <div class="semester01 col-lg-6 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="att_title">1st Semester</div>
-                        </div>
-                        <div class="col-12">
-                            <canvas id="semester01" height="250"></canvas>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Freshman (100L) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="record-details">
+                                <table>
+                                    <col style="width:80%">
+                                    <col style="width:20%">
+                                    <tr>
+                                        <td>First Semester GPA</td>
+                                        <td>4.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Second Semester GPA</td>
+                                        <td>4.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CGPA</td>
+                                        <td>4.75</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="semester02 col-lg-6 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="att_title">2nd Semester</div>
-                        </div>
-                        <div class="col-12">
-                            <canvas id="semester02" height="250"></canvas>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Sophomore (200L) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="record-details">
+                                <table>
+                                    <col style="width:80%">
+                                    <col style="width:20%">
+                                    <tr>
+                                        <td>First Semester GPA</td>
+                                        <td>4.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Second Semester GPA</td>
+                                        <td>4.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CGPA</td>
+                                        <td>4.75</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="complete_att02 col-lg-8 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="att_title">Complete Attendance</div>
-                        </div>
-                        <div class="col-12">
-                            <canvas id="complete_att02" height="150"></canvas>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Junior Student (300L) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="record-details">
+                                <table>
+                                    <col style="width:80%">
+                                    <col style="width:20%">
+                                    <tr>
+                                        <td>First Semester GPA</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Second Semester GPA</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CGPA</td>
+                                        <td>--</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="complete_att01 col-lg-4 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="att_title">Attendance Percentage</div>
-                        </div>
-                        <div class="col-12">
-                            <canvas id="complete_att01" width="1000" height="1000"></canvas>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Senior Student(400L) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="record-details">
+                                <table>
+                                    <col style="width:80%">
+                                    <col style="width:20%">
+                                    <tr>
+                                        <td>First Semester GPA</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Second Semester GPA</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CGPA</td>
+                                        <td>--</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
