@@ -445,6 +445,11 @@ body{
     font-size: 13px;
     text-align: center;
     color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 /* contact */
@@ -965,6 +970,11 @@ body{
     .record-details table{
         width: 100%;
     }
+}
+
+.main__404{
+    max-width: 100%;
+    position: relative;
 }
 
 .mainbox {
