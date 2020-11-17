@@ -19,6 +19,30 @@ $(function(){
         $(".contact_bg h3").css({"margin-left": "350px"})
     })
 
+    // dropdown
+    $("#dropdown").click(function(){
+        if($("#dropdown_menu").css("visibility") == "hidden"){
+            $("#dropdown_menu").css({"height": "200px", "visibility": "visible"})
+            $("#dropdown i").css({"transform": "rotate(180deg)"})
+        }else{
+            $("#dropdown_menu").css({"height": "0", "visibility": "hidden"})
+            $("#dropdown i").css({"transform": "rotate(0)"})
+        }
+    })
+
+    
+    document.getElementById("upload").onchange = function(){
+        var fullPath = document.getElementById('upload').value;
+        if (fullPath) {
+            var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+            var filename = fullPath.substring(startIndex);
+            if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+                filename = filename.substring(1);
+            }
+            document.querySelector(".fileuploader .file_display div").innerHTML = filename
+        }
+    }
+
     // Avatar Upload
     document.querySelector('.main_body .profile .card #avatar-upload').addEventListener('change', readURL, true);
     function readURL(){
@@ -105,4 +129,3 @@ let complete02 = new Chart(complete_att02, {
     },
     options: {}
 })
-

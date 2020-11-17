@@ -1,11 +1,11 @@
 @font-face {
     font-family: Montserrat;
-    src: url("../fonts/Montserrat.ttf");
+    src: url("../font/Montserrat.ttf");
 }
 
 @font-face {
     font-family: Dosis;
-    src: url("../fonts/Dosis.ttf");
+    src: url("../font/Dosis.ttf");
 }
 
 *{
@@ -104,9 +104,9 @@ body{
 .brand_text div:nth-child(2){
     font-weight: 600;
     width: 100% !important;
-    font-size: 17px;
+    font-size: 18px;
     color: rgba(0, 32, 90, 0.576) !important;
-    letter-spacing: 9px;
+    letter-spacing: 8px;
 }
 
 @media (max-width: 500px){
@@ -130,7 +130,7 @@ body{
     
     .brand_text div:nth-child(2){
         font-size: 10px;
-        letter-spacing: 5.5px;
+        letter-spacing: 5px;
     }
 }
 
@@ -144,7 +144,7 @@ body{
     text-align: center;
     font-size: 13px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(0, 32, 90);
     text-decoration: none;
     transition: 200ms;
@@ -1036,4 +1036,178 @@ body{
 
 .main__404 .mainbox a:hover {
     text-decoration: underline;
+}
+
+.scoresheet_download{
+    display: block;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 32, 90);
+    line-height: 30px;
+    width: 100px;
+    text-decoration: none !important;
+}
+
+.scoresheet_download:hover{
+    background-color: rgba(0, 32, 90, 0.774);
+}
+
+.scoresheet .d-flex{
+    margin-top: 10vh;
+}
+
+.scoresheet .card{
+    width: 200px;
+    background-color: transparent;
+    border: none !important;
+}
+
+#dropdown{
+    width: 100%;
+    line-height: 40px;
+    padding: 0 0 0 20px;
+    text-align: left;
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+    background-color: rgb(0, 32, 90);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#dropdown:hover{
+    box-shadow: 0px 1px 5px rgba(0, 32, 90, 0.589);
+}
+
+#dropdown i{
+    float: right;
+    line-height: 40px;
+    transition: 200ms;
+    width: 50px;
+    text-align: center;
+}
+
+#dropdown_menu{
+    width: 100%;
+    background-color: rgba(0, 32, 90, 0.838);
+    height: 0px;
+    visibility: hidden;
+    overflow-y: scroll;
+    transition: 200ms;
+}
+
+#dropdown_menu::-webkit-scrollbar{
+    width: 5px;
+    z-index: 7 !important;
+}
+
+#dropdown_menu::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.859);
+}
+
+#dropdown_menu::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+#dropdown_menu a{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    padding: 0px 20px;
+    text-align: left;
+    font-weight: 500;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+#dropdown_menu a:hover{
+    background-color: white;
+    color: rgb(0, 32, 90);
+}
+
+.fileuploader{
+    width: 50%;
+    background-color: #0064b7;
+    padding: 30px 30px 0 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+@media(max-width: 700px){
+    .fileuploader{
+        width: 100%;
+    }
+}
+
+.fileuploader .cloud_icon{
+    font-size: 50px;
+    background: white;
+    color: #0064b7;
+    border-radius: 100%;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.fileuploader form input[type="file"]{
+    display: none;
+}
+
+.fileuploader form label{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: white;
+    color: #0064b7;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    transition: 200ms;
+}
+
+.fileuploader form label:hover{
+    border: 1px solid white;
+    background: #0064b7;
+    color: white;
+}
+
+.fileuploader .file_display{
+    width: 100%;
+    border: 2px dashed rgb(232, 232, 232);
+    padding:30px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.fileuploader .file_display i{
+    font-size: 60px;
+    color: rgba(232, 232, 232);
+    width: 100%;
+    text-align: center;
+}
+
+
+.fileuploader .file_display div{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.fileuploader form input[type="submit"]{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: white;
+    color: #0064b7;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    transition: 200ms;
+    border: 0 !important;
 }
